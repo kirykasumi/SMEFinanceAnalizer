@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="true"
+    android:orientation="vertical" >
+
+    <!-- ヘッダ -->
+
+    <TableLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:shrinkColumns="0"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textSales"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="会社名" />
+
+            <EditText
+                android:id="@+id/editCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:inputType="textImeMultiLine" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textSales"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="業種" />
+
+            <Spinner
+                android:id="@+id/spinIndustrialCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- フッター -->
+
+    <LinearLayout
+        android:id="@+id/fotter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="3dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnRegistCompany"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="登録" />
+    </LinearLayout>
+
+</RelativeLayout>

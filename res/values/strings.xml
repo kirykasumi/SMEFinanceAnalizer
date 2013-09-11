@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">SMEFinanceAnalizer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_company_list">CompanyList</string>
+    <string name="title_activity_finance_list">FinanceList</string>
+    <string name="title_activity_company_information">CompanyInformation</string>
+    <string name="title_activity_finance_information">FinanceInformation</string>
+    <string name="title_activity_company_analyze">CompanyAnalyze</string>
+
+</resources>
